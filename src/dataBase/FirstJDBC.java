@@ -8,11 +8,11 @@ import java.sql.*;
 
 public class FirstJDBC {
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-	static final String DB_URL = "jdbc:mysql://198.23.57.16:3308/vanrea_test";
+	static final String DB_URL = "jdbc:mysql://198.23.57.16:3306/vanrea5_java";
 	
 	//  Database credentials
-	static final String USER = "vanrea_test";
-	static final String PASS = "rearea";
+	static final String USER = "vanrea5_java";
+	static final String PASS = "1234";
 	
 	public static void main(String[] args) {
 		Connection conn = null;
@@ -30,20 +30,20 @@ public class FirstJDBC {
 			  System.out.println("\t " + rs.getString(3));
 			}
 			
-			stmt = conn.createStatement();
-			String sql = "CREATE TABLE JAVAA " +
-	                   "(id INTEGER not NULL, " +
-	                   " first VARCHAR(255), " + 
-	                   " last VARCHAR(255), " + 
-	                   " age INTEGER, " + 
-	                   " PRIMARY KEY ( id ))"; 
-
-			stmt.executeUpdate(sql);
-//	      
-//			System.out.println("Creating database...");
 //			stmt = conn.createStatement();
-//			String sql = "CREATE DATABASE JAVA";
+//			String sql = "CREATE TABLE JAVAA " +
+//	                   "(id INTEGER not NULL, " +
+//	                   " first VARCHAR(255), " + 
+//	                   " last VARCHAR(255), " + 
+//	                   " age INTEGER, " + 
+//	                   " PRIMARY KEY ( id ))"; 
+//
 //			stmt.executeUpdate(sql);
+	      
+			System.out.println("Creating database...");
+			stmt = conn.createStatement();
+			String sql1 = "CREATE TABLE FirstTry";
+			stmt.executeUpdate(sql1);
 			
 		    System.out.println("Database created successfully...");
 		}catch(SQLException se){
