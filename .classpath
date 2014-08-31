@@ -7,5 +7,6 @@
 	<classpathentry kind="lib" path="lib/marytts-server-5.0-jar-with-dependencies.jar"/>
 	<classpathentry kind="lib" path="lib/marytts-client-5.0-jar-with-dependencies.jar"/>
 	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.32-bin.jar"/>
+	<classpathentry kind="lib" path="lib/lib/htmlunit-2.15.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
